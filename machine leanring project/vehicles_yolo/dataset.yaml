@@ -1,7 +1,0 @@
-names:
-- vehicle
-nc: 1
-path: C:\Users\wikto\Desktop\machine leanring project\vehicles_yolo
-test: images/test
-train: images/train
-val: images/val
