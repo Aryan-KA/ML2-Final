@@ -1,11 +1,13 @@
 import gradio as gr
 from huggingface_hub import hf_hub_download
 from ultralytics import YOLO
+from huggingface_hub import login
+
 
 # 1. Download the weights file from the Hugging Face Hub
 # NOTE: Replace "best.pt" if the repository uses a different filename for the weights 
 # (e.g., "model.pt" or "yolo26s.pt").
-model_path = hf_hub_download(repo_id="Perception365/VehicleNet-Y26s", filename="best.pt")
+model_path = hf_hub_download(repo_id="Perception365/VehicleNet-Y26s", filename="weights/best.pt")
 
 # 2. Initialize YOLO with the downloaded local file path
 model = YOLO(model_path)
